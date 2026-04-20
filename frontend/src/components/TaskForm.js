@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import { createTask } from "../services/api";
 
 const TaskForm = ({ refresh }) => {
-  const [task, setTask] = useState({
-    title: "",
-    description: ""
-  });
+  const [task, setTask] = useState({ title: "", description: "" });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,28 +12,24 @@ const TaskForm = ({ refresh }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="task-input-section" onSubmit={handleSubmit}>
       <input
+        className="input-field"
         type="text"
         placeholder="Title"
         value={task.title}
-        onChange={(e) =>
-          setTask({ ...task, title: e.target.value })
-        }
+        onChange={(e) => setTask({ ...task, title: e.target.value })}
         required
       />
-
       <input
+        className="input-field"
         type="text"
         placeholder="Description"
         value={task.description}
-        onChange={(e) =>
-          setTask({ ...task, description: e.target.value })
-        }
+        onChange={(e) => setTask({ ...task, description: e.target.value })}
         required
       />
-
-      <button type="submit">Add Task</button>
+      <button className="add-task-btn" type="submit">+ Add Task</button>
     </form>
   );
 };
