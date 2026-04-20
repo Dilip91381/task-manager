@@ -1,0 +1,125 @@
+.app{
+  display: flex;
+  justify-self: center;
+  align-items:center ;
+  flex-direction: column;
+}
+/* Wrapper */
+.task-wrapper {
+  max-width: 800px;
+  /* margin: auto; */
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Title */
+.task-wrapper h2 {
+  margin-bottom: 15px;
+}
+
+/* Task Row */
+.task-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Left */
+.task-left h3 {
+  margin: 0;
+}
+
+.task-left p {
+  color: #666;
+}
+
+/* Right */
+.task-right {
+  text-align: right;
+}
+
+/* Date */
+.date {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Status */
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+/* Pending (yellow) */
+.pending {
+  background: #ffe58f;
+}
+
+/* Completed (green) */
+.completed {
+  background: #b7eb8f;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.complete-btn {
+  background: #1677ff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.complete-btn:hover {
+  background: #0958d9;
+}
+
+.delete-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}.app-container {
+  max-width: 800px;
+  margin: 0 auto;           /* centers horizontally */
+  padding: 20px;
+  text-align: center;       /* centers heading */
+}
+
+.task-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* centers task cards */
+}
+
+.task-card {
+  width: 100%;
+  max-width: 600px;
+}
+
+.delete-btn:hover {
+  background: #cf1322;
+}
